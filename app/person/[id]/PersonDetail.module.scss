@@ -1,0 +1,49 @@
+.section {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1)) /* #ffffff */;
+  padding: 2.5rem 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.name {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.bio {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem /* 24px */;
+}
