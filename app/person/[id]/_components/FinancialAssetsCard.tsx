@@ -8,7 +8,7 @@ export default function FinancialAssetCard({
   return (
     <article className={styles.card}>
       <div>Ticker: {ticker}</div>
-      <div>Shares: {sharePrice}</div>
+      <div>Shares: {sharePrice.toFixed(2)}</div>
       {exerciseOptionPrice && <div>Excercise Price: {exerciseOptionPrice}</div>}
     </article>
   );
