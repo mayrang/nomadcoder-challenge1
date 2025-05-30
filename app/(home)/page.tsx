@@ -1,10 +1,10 @@
 import Image from "next/image";
 import PersonCard, { IPersonCard } from "./_components/PersonCard";
 
-export const API_URL = "https://billions-api.nomadcoders.workers.dev/";
+export const apiUrl = "https://billions-api.nomadcoders.workers.dev/";
 
 async function getDatas() {
-  const response = await fetch(`${API_URL}`);
+  const response = await fetch(`${apiUrl}`);
   const data = await response.json();
   return data as IPersonCard[];
 }

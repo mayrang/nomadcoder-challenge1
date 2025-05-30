@@ -1,10 +1,10 @@
-import { API_URL } from "@/app/(home)/page";
+import { apiUrl } from "@/app/(home)/page";
 import { calculateBillion } from "@/util";
 import Image from "next/image";
 import FinancialAssetCard from "./_components/FinancialAssetsCard";
 import styles from "./PersonDetail.module.scss";
 async function getDetailPerson(id: string) {
-  const response = await fetch(`${API_URL}/person/${id}`);
+  const response = await fetch(`${apiUrl}/person/${id}`);
   const data = await response.json();
   return data as DetailPerson;
 }
