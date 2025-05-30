@@ -1,7 +1,6 @@
 import Image from "next/image";
 import PersonCard, { IPersonCard } from "./_components/PersonCard";
-
-export const apiUrl = "https://billions-api.nomadcoders.workers.dev/";
+import { apiUrl } from "@/util";
 
 async function getDatas() {
   const response = await fetch(`${apiUrl}`);

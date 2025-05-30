@@ -1,5 +1,4 @@
-import { apiUrl } from "@/app/(home)/page";
-import { calculateBillion } from "@/util";
+import { apiUrl, calculateBillion } from "@/util";
 import Image from "next/image";
 import FinancialAssetCard from "./_components/FinancialAssetsCard";
 import styles from "./PersonDetail.module.scss";
